@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bulma/css/bulma.css';
+{/* <link href='bulmas.css'></link> */}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

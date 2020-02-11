@@ -1,36 +1,18 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-//import Navbar from './Navbar'
-import FormField from "./FormField";
-
+import React from 'react';
+import './App.css';
+import NavBar from './Navbar'
+import FormField from './FormField'
 function App() {
   return (
     <div className="App">
-      <nav id="navbar" className="bd-navbar navbar has-shadow is-spaced">
-        <div className="container">
-          <div className="navbar-brand">
-            <a className="navbar-item" href="https://bulma.io">
-              <img
-                src="https://bulma.io/images/bulma-logo.png"
-                alt="Bulma: Free, open source, and modern CSS framework based on Flexbox"
-                width="112"
-                height="28"
-              />
-            </a>
-            <span>
-              <a className="home-item">Home</a>
-            </span>
-          </div>
-          <div className="nav-left">
-            <button id="bt1">Login </button>
-            <button id="bt2">Sign Up </button>
-          </div>
-        </div>
-      </nav>
-      <FormField className="cool" label="Name" type="text" placeholder="e.g Alex Smith" />
-      <FormField className="cool2"  label="Email" type="email" placeholder="e.g. alexsmith@gmail.com"/>
+        <NavBar />
+        <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
+        <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
+        <FormField label="Telephone" type="number" placeholder="555-555-5555" />
+        <FormField label="CreditCard" type="number" placeholder="1234567890" />
+
     </div>
   );
 }
+
 export default App;
